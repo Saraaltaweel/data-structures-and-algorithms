@@ -8,9 +8,8 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 
 const replaceZeros = (string) => {
   // Solution code here...
-  string.map(string => {
-    return string.replace(0 ,'zero')
-  });
+  let regx = /[0]/g;
+  return string.replace(regx , 'zero');
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,8 +20,12 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
-  arr.map(arr + 1);
-  return arr;
+  let numArr=[];
+   arr.map(num =>{
+    numArr.push(num+1);
+  })
+  return numArr;
+
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,12 +36,12 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
-  arr.foreach((element)=>{
-arr.map(element ,'?');
-  })
-  return arr;
-  
+  let array=[];
 
+  arr.map(str=>{
+    array.push(str + '?')
+  } )
+  return array;
 }
 
 /* ------------------------------------------------------------------------------------------------
