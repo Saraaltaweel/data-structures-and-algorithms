@@ -11,5 +11,6 @@ def BinarySearch(list,val):
           elif middle_val_num>val:
               indx_last=middle_val+1   
           elif middle_val_num<val:
-              indx_firstt=middle_val-1      
-        return -1      
+              indx_firstt=middle_val-1    
+          else:      
+              return -1      
